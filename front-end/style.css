@@ -1,66 +1,398 @@
-html, body, div, span, applet, object, 
-	iframe, 
-h1, h2, h3, h4, h5, h6, p, blockquote, 
-	pre, 
-a, abbr, acronym, address, big, cite, 
-	code, 
-del, dfn, em, img, ins, kbd, q, s, 
-	samp, 
-small, strike, strong, sub, sup, 
-	tt, var, 
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, 
-	tr, th, td, 
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, 
-	hgroup, 
-menu, nav, output, ruby, section, 
-	summary, 
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for 
-	older browsers */ 
-article, aside, details, figcaption, 
-	figure, 
-footer, header, hgroup, menu, nav, 
-	section { 
-	display: block;
+	older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
 
 
-.container{
+.container {
+    width: 1270px;
+    margin: 0 auto;
+}
 
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header {
+    padding-top: 54px;
+}
+
+.menu {
+    flex-basis: 70%;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #911F27;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.header__cart {
+    cursor: pointer;
+
+    padding: 14px 61px;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+
+    font-weight: 700;
+    border-radius: 8px;
+    background: #630A10;
+}
+
+.link_to_menu {
+    padding-top: 50px;
+}
+
+.link_el {
+    cursor: pointer;
+    padding: 16px 70px;
+    border-radius: 33.5px;
+    background: #FCF0C8;
+}
+
+.link_el p {
+    color: #911F27;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 20px */
+    letter-spacing: -0.5px;
+}
+
+.welcome {
+    padding-top: 50px;
+}
+
+.stories {
+    padding-top: 24px;
+}
+
+.stories img {
+    cursor: pointer;
+}
+
+.wrapper_title {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper_title h1 {
+    color: #630A10;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 40px */
+    letter-spacing: -1px;
+}
+
+.queue {
+    margin-left: 42px;
+    padding: 4px 0px;
+    display: flex;
+    border-radius: 12.5px;
+    background: #FFF;
+    box-shadow: 0px 3px 5.3px 2px rgba(0, 0, 0, 0.25);
+}
+
+.queue p {
+    padding: 0px 5px;
+
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 15px */
+    letter-spacing: -0.375px;
+}
+
+.point {
+    padding-right: 3px;
+}
+
+.new {
+    padding-top: 63px;
+}
+
+.new .wrapper {
+    justify-content: flex-start;
 }
 
 
-@media(max-width: 360px){
 
+.new h1 {
+    color: #630A10;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 40px */
+    letter-spacing: -1px;
+
+    padding-bottom: 30px;
+}
+
+
+.new__card {
+    margin-right: 50px;
+    width: 280px;
+    height: 193px;
+    padding: 0px 18px;
+    border-radius: 8px;
+    border: 2px solid #A7A7A7;
+}
+
+.new__card h3 {
+    color: #911F27;
+    font-family: Montserrat;
+
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 15px */
+    letter-spacing: -0.375px;
+}
+
+.new__card-footer {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price h4 {
+    color: #630A10;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 24px */
+    letter-spacing: -0.6px;
+}
+
+.price p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 14px */
+    letter-spacing: -0.35px;
+}
+
+.add__cart {
+    cursor: pointer;
+    border: none;
+
+    width: 37px;
+    height: 37px;
+
+    border-radius: 8px;
+    background: #911F27;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 20px */
+    letter-spacing: -0.5px;
+}
+
+.eat__product {
+    padding: 32px 20px;
+    border-radius: 8px;
+    border: 1px solid #A2A2A2;
+    background: #FFF;
+}
+
+.eat__title{
+    padding-top: 60px;
+    padding-bottom: 10px;
+    color: #630A10;
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 40px */
+letter-spacing: -1px;
+}
+
+
+.eat__product h3 {
+    padding-bottom: 19px;
+    color: #000;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 15px */
+    letter-spacing: -0.375px;
+}
+
+.eat__product p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 15px */
+    letter-spacing: -0.375px;
+    width: 160px;
+}
+
+@media(max-width: 450px) {
+    .container {
+        width: 312px;
+    }
 }
