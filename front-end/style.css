@@ -828,6 +828,91 @@ table {
     letter-spacing: -0.6px;
     
 }
+
+.rev{
+    margin-top: 140px;
+}
+
+.rev h1{
+    color: #911F27;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-bottom: 25px;
+}
+
+.rev input{
+    margin-bottom: 111px;
+    width: 722px;
+    padding: 15px 0px;
+    padding-left: 20px;
+    border-radius: 8px;
+    border: 2px solid #C3C3C3;
+    background: #FFF;
+}
+
+.rev__card{
+    border-radius: 8px;
+    border: 2px solid #A7A7A7;
+
+    padding: 50px 0px;
+    padding-left: 20px;
+}
+
+.rev__card-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+
+.rev__card-title h2{
+    margin-left: 10px;
+    width: 218px;
+    color: #911F27;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 24px */
+    letter-spacing: -0.6px;
+}
+
+.rev__card-el{
+    display: flex;
+    align-items: center;
+}
+
+.rev__card-el-user{
+    margin-right: 30px;
+}
+
+.rev__card-el-text h3{
+    color: #630A10;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 24px */
+    letter-spacing: -0.6px;
+
+    margin-bottom: 10px;
+}
+
+.rev__card-el-text p{
+    width: 614px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 24px */
+    letter-spacing: -0.6px;
+}
+
 @media(max-width: 450px) {
     .container {
         width: 312px;
