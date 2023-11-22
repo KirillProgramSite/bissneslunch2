@@ -199,7 +199,9 @@ table {
     background: #FCF0C8;
 }
 
-.link_el p {
+.link_el a {
+    border: none;
+    text-decoration: none;
     color: #911F27;
     font-family: Roboto;
     font-size: 20px;
@@ -909,6 +911,79 @@ table {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
+    line-height: 100%; /* 24px */
+    letter-spacing: -0.6px;
+}
+
+.menu-cards{
+    margin-top: 130px;
+}
+
+.menu-cards .wrapper{
+  justify-content: flex-start;  
+}
+
+.menu-cards h1{
+    color: #911F27;
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 40px;
+}
+
+.menu-cards .eat__product{
+    margin-right: 15px;
+}
+
+.edit_menu{
+    margin-top: 45px;
+    margin-bottom: 95px;
+}
+
+.edit_menu form{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit_menu-form{
+    padding-left: 20px;
+    border-radius: 8px;
+    border: 2px solid #C3C3C3;
+    background: #FFF;
+    width: 722px;
+    height: 49px;
+    margin-bottom: 15px;
+}
+
+.edit_menu-form-big{
+    padding-left: 20px;
+    border-radius: 8px;
+    border: 2px solid #C3C3C3;
+    background: #FFF;
+    width: 722px;
+    height: 49px;
+    max-width: 722px;
+    min-width: 722px;
+    margin-bottom: 15px;
+}
+
+.edit_menu-btn{
+    border: none;
+    cursor: pointer;
+
+    width: 316px;
+    height: 48px;
+
+    border-radius: 8px;
+    background: #911F27;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
     line-height: 100%; /* 24px */
     letter-spacing: -0.6px;
 }
