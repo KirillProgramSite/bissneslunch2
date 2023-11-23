@@ -10,6 +10,55 @@
 </head>
 
 <body>
+    <aside class="cart">
+        <div class="container">
+            <div class="cart__wrapper">
+                <div class="cart__title">
+                    <h1>Корзина</h1>
+                    <img src="img/close.svg" alt="">
+                </div>
+                <div class="cart__type-innings">
+                    <div class="cart__type-innings-wrapper">
+                        <div class="cart__type-innings-el active">
+                            <p>Доставка</p>
+                            <svg class="truck" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M16 3H1V16H16V3Z" stroke="#911F27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 8H20L23 11V16H16V8Z" stroke="#911F27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.5 21C6.88071 21 8 19.8807 8 18.5C8 17.1193 6.88071 16 5.5 16C4.11929 16 3 17.1193 3 18.5C3 19.8807 4.11929 21 5.5 21Z" stroke="#911F27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" stroke="#911F27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="cart__type-innings-el">
+                            <p>На месте</p>
+                            <svg class="place" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M20 16H22V18H0V16H2V1C2 0.44772 2.44772 0 3 0H13C13.5523 0 14 0.44772 14 1V16H18V8H16V6H19C19.5523 6 20 6.44772 20 7V16ZM4 2V16H12V2H4ZM6 8H10V10H6V8ZM6 4H10V6H6V4Z" fill="#911F27"/>
+                              </svg>
+                        </div>
+                    </div>
+                    <h2>Офис разработки ИИ</h2>
+                </div>
+                <div class="cart__cards">
+                    <div class="cart__cards-el">
+                        <div class="cart__cards-el-img">
+                            <img src="img/salad.png" alt="">
+                        </div>
+                        <div class="cart__cards-el-text">
+                            <h2>Салат Греческий</h2>
+                            <h3>85₽</h3>
+                        </div>
+                        <div class="cart__cards-el-del">
+                            <img src="img/trash.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__total">
+                    <h2>Сумма заказа</h2>
+                    <h3>125₽</h3>
+                </div>
+                <button class="cart__total-btn">К оформлению</button>
+            </div>
+        </div>
+    </aside>
     <header class="header">
         <div class="container">
             <div class="wrapper">
@@ -448,6 +497,9 @@
             </div>
         </section>
     </main>
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>

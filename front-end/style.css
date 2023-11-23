@@ -133,6 +133,94 @@ table {
 }
 
 
+.cart{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cart__wrapper{
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+
+.cart__title{
+    padding: 29px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart__title h1{
+    color: #911F27;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 32px */
+    letter-spacing: -0.8px;
+}
+
+.cart__title img{
+    cursor: pointer;
+}
+
+.cart__type-innings-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FACE7F;
+    
+}
+
+.cart__type-innings-el{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.cart__type-innings-el svg{
+    margin-right: 6px;
+    width: 24px;
+}
+
+.cart__type-innings-el p{
+    color: #911F27;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.4px;
+}
+
+.cart__type-innings-el.active{
+    padding: 5px 17px;
+    background: #911F27;
+    border-radius: 5px;
+    
+}
+
+.cart__type-innings-el.active path{
+    stroke: white;
+}
+.cart__type-innings-el.active p{
+    color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 16px */
+letter-spacing: -0.4px;
+}
+
 
 
 .container {
