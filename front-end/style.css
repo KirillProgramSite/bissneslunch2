@@ -134,6 +134,7 @@ table {
 
 
 .cart{
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -148,7 +149,7 @@ table {
     position: relative;
     left: 60%;
     width: 548px;
-    height: 700px;
+    height: 730px;
 
     margin-top: 10px;
     border-radius: 8px;
@@ -297,7 +298,7 @@ table {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 54px;
+    padding-top: 34px;
     padding-bottom: 20px;
     border-top: 1px solid #C5C5C5;
 }
@@ -314,12 +315,86 @@ letter-spacing: -0.6px;
 
 .cart__total h3{
     color: #630A10;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 36px */
+    letter-spacing: -0.9px;
+}
+
+.cart__total-btn {
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #911F27;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 24px */
+    letter-spacing: -0.6px;
+
+    padding: 12px 61px;
+}
+
+.ready {
+    display: none;
+
+    padding: 17px 16px;
+    width: 500px;
+    height: 201px;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 27.1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.ready__title{
+    display: flex;
+    align-items: center;
+}
+
+.ready__title h3{
+    padding-right: 235px;
+    color: #911F27;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 24px */
+    letter-spacing: -0.6px;
+}
+
+.ready h1{
+    color: #630A10;
 font-family: Montserrat;
-font-size: 36px;
+font-size: 64px;
 font-style: normal;
 font-weight: 700;
-line-height: 100%; /* 36px */
-letter-spacing: -0.9px;
+line-height: 100%; /* 64px */
+letter-spacing: -1.6px;
+}
+
+.ready__button{
+    margin-top: 70px;
+    padding: 19px 188px;
+    border-radius: 8px;
+    background: #911F27;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 20px */
+    letter-spacing: -0.5px;
+    border: none;    
 }
 
 
