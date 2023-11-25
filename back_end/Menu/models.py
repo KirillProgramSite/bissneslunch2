@@ -31,6 +31,7 @@ class Menu(models.Model):
     fat = models.IntegerField()
     type = models.ForeignKey(Type, on_delete=models.CASCADE)
     recall = models.ManyToManyField(Review, blank=True, null=True)
+    bonus = models.IntegerField()
 
     class Meta:
         ordering = ['type']
