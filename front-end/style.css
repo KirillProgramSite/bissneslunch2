@@ -180,7 +180,12 @@ table {
     cursor: pointer;
 }
 
-.cart__type-innings {
+.cart__type-innings-mobile{
+    display: none;
+}
+
+.cart__type-innings,
+.cart__type-innings-mobile {
     width: 494px;
     padding: 14px 23px;
     border-radius: 8px;
@@ -228,7 +233,8 @@ table {
 
 }
 
-.cart__type-innings h2 {
+.cart__type-innings h2,
+.cart__type-innings-mobile h2 {
     margin-top: 11px;
 
     text-align: center;
@@ -350,7 +356,6 @@ table {
 
 .ready {
     display: none;
-
     padding: 17px 16px;
     width: 500px;
     height: 201px;
@@ -567,12 +572,14 @@ table {
     flex-basis: 70%;
 }
 
-.menu ul {
+.menu {
     display: flex;
+    align-items: center;
 }
 
-.menu ul li a {
-    text-decoration: none;
+.menu p {
+    cursor: pointer;
+    overflow: scroll;
     color: #911F27;
     font-family: Montserrat;
     font-size: 20px;
@@ -714,6 +721,8 @@ table {
 }
 
 .new__card-footer {
+    position: relative;
+    top: 20px;
     padding-top: 10px;
     display: flex;
     align-items: center;
@@ -763,10 +772,12 @@ table {
 }
 
 .eat__product {
+    margin-bottom: 16px;
     padding: 32px 20px;
     border-radius: 8px;
     border: 1px solid #A2A2A2;
     background: #FFF;
+    height: 300px;
 }
 
 .eat__title {
@@ -804,6 +815,10 @@ table {
     /* 15px */
     letter-spacing: -0.375px;
     width: 160px;
+}
+
+.new__card-footer p{
+    padding: 0;
 }
 
 .user_info {
@@ -1082,16 +1097,21 @@ table {
     letter-spacing: -1px;
 }
 
-.congif_order h3 {
+.adress{
+    display: none;
+}
+
+.congif_order__title h3 {
     color: #911F27;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
     /* 20px */
     letter-spacing: -0.5px;
 
+    padding-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -1119,7 +1139,7 @@ table {
     padding-left: 18px;
 }
 
-.congif_order_form button {
+.congif_order-btn{
     cursor: pointer;
     border: none;
 
@@ -1525,10 +1545,33 @@ table {
 @media(max-width: 450px) {
     .container {
         width: 312px;
+        margin: 0;
+        padding:0px 40px;
+    }
+
+    .header{
+        width: 320px;
+    }
+
+    .link_to_menu{
+        display: none;
     }
 
     .cart__wrapper {
         position: static;
         width: 320px;
+    }
+
+    .cart__type-innings{
+        margin-top: 30px;
+    }
+
+    .cart__type-innings-mobile,
+    .cart__type-innings-wrapper{
+        width: 320px;
+    }
+
+    .cart__type-innings-mobile{
+        display: block;
     }
 }

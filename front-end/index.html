@@ -14,8 +14,8 @@
         <div class="auth_wrapper">
             <div class="container">
                 <div class="auth_title">
-                    <h1>Добро пожаловать в Деловой Обед!</h1>
-                    <img src="img/close.svg" alt="">
+                    <h1>Добро пожаловxать в Деловой Обед!</h1>
+                    <img class="authClose" src="img/close.svg" alt="">
                 </div>
                 <p>Введите ваши данные для входа в сервис</p>
                 
@@ -32,7 +32,7 @@
         <div class="reg__wrapper">
             <div class="reg__title">
                 <h1>Войдите в мир вкусной еды вместе с “Деловым Обедом”</h1>
-                <img src="img/close.svg" alt="">
+                <img class="regClose" src="img/close.svg" alt="">
             </div>
             <p>Введите ваши данные для регистрации на сайт</p>
             <form class="reg__form" action="">
@@ -152,6 +152,14 @@
         <div class="container">
             <div class="wrapper">
                 <div class="header__logo"><img src="img/logo.svg" alt=""></div>
+                <nav class="menu">
+                    <p class="authBtn">
+                        Зарегестрироваться
+                    </p>
+                    <p class="regBtn">
+                        Авторизация
+                    </p>
+                </nav>
                 <div class="cart-btns-wrapper">
                     <img class="cart-user" src="img/mini-user.svg" alt="">
                     <img class="cart-button" src="img/cart.svg" alt="">
@@ -182,30 +190,32 @@
                 </div>
             </div>
         </section>
-        <div class="cart__type-innings">
-            <div class="cart__type-innings-wrapper">
-                <div class="cart__type-innings-el active">
-                    <p>Доставка</p>
-                    <svg class="truck" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M16 3H1V16H16V3Z" stroke="#911F27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M16 8H20L23 11V16H16V8Z" stroke="#911F27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M5.5 21C6.88071 21 8 19.8807 8 18.5C8 17.1193 6.88071 16 5.5 16C4.11929 16 3 17.1193 3 18.5C3 19.8807 4.11929 21 5.5 21Z" stroke="#911F27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" stroke="#911F27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+        <div class="container">
+            <div class="cart__type-innings-mobile">
+                <div class="cart__type-innings-wrapper">
+                    <div class="cart__type-innings-el active">
+                        <p>Доставка</p>
+                        <svg class="truck" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M16 3H1V16H16V3Z" stroke="#911F27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 8H20L23 11V16H16V8Z" stroke="#911F27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.5 21C6.88071 21 8 19.8807 8 18.5C8 17.1193 6.88071 16 5.5 16C4.11929 16 3 17.1193 3 18.5C3 19.8807 4.11929 21 5.5 21Z" stroke="#911F27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" stroke="#911F27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="cart__type-innings-el">
+                        <p>На месте</p>
+                        <svg class="place" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                            <path d="M20 16H22V18H0V16H2V1C2 0.44772 2.44772 0 3 0H13C13.5523 0 14 0.44772 14 1V16H18V8H16V6H19C19.5523 6 20 6.44772 20 7V16ZM4 2V16H12V2H4ZM6 8H10V10H6V8ZM6 4H10V6H6V4Z" fill="#911F27"/>
+                          </svg>
+                    </div>
                 </div>
-                <div class="cart__type-innings-el">
-                    <p>На месте</p>
-                    <svg class="place" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
-                        <path d="M20 16H22V18H0V16H2V1C2 0.44772 2.44772 0 3 0H13C13.5523 0 14 0.44772 14 1V16H18V8H16V6H19C19.5523 6 20 6.44772 20 7V16ZM4 2V16H12V2H4ZM6 8H10V10H6V8ZM6 4H10V6H6V4Z" fill="#911F27"/>
-                      </svg>
-                </div>
+                <h2>Офис разработки ИИ</h2>
             </div>
-            <h2>Офис разработки ИИ</h2>
         </div>
         <section class="welcome">
             <div class="container">
                 <div class="wrapper_title">
-                    <h1>Привет!</h1>
+                    <h1>Новости</h1>
                     <div class="queue">
                         <p>Свободно</p>
                         <div class="point">
@@ -271,7 +281,7 @@
         <section class="salad" id="salad">
             <div class="container">
                 <h1 class="eat__title">Салаты</h1>
-                <div class="wrapper">
+                <div class="wrapper salad__wrapper">
                     <div class="eat__product">
                         <img src="img/salad.png" alt="">
                         <h3>Салат Греческий</h3>
