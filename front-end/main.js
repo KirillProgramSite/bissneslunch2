@@ -15,7 +15,7 @@ let regClose = document.querySelector('.regClose');
 let body = document.body
 
 let eatProduct = document.querySelectorAll('.eat__product')
-let productInfo = document.
+
 
 
 
@@ -144,12 +144,6 @@ authClose.addEventListener("click", ()=> {
     body.style.overflowY = 'scroll'
 })
 
-
-eatProduct.forEach((el) => {
-    el.addEventListener("click", () => {
-
-    })
-})
 
 
 
